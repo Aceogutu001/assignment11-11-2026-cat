@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMUST Student Information Portal</title>
+    <!-- QUESTION FOUR: Link external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- QUESTION ONE (c) & (d): Header and Navigation -->
+    <header>
+        <h1>Masinde Muliro University of Science & Technology</h1>
+        <h2>Student Information Portal (Kakamega Main Campus)</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#registration">Student Registration</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- QUESTION TWO (a) & (b): About Section and MMUST Programmes List -->
+        <section id="about" class="card">
+            <h2>About the Portal</h2>
+            <p>The MMUST Student Information Portal serves as the central hub for managing student records, course registrations, and academic services for students and faculty across our Kakamega campus.</p>
+            
+            <h3>Featured Academic Programmes</h3>
+            <ul>
+                <li>BSc in Computer Science (School of Computing & Informatics)</li>
+                <li>BSc in Information Technology (School of Computing & Informatics)</li>
+                <li>BSc in Civil & Structural Engineering (School of Engineering)</li>
+                <li>Bachelor of Commerce (School of Business & Economics)</li>
+            </ul>
+        </section>
+
+        <!-- QUESTION TWO (c): MMUST Student Information Table -->
+        <section id="home" class="card">
+            <h2>Enrolled Students Directory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Registration Number</th>
+                        <th>Programme</th>
+                        <th>Year of Study</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Emmanuel Wafula</td>
+                        <td>SIT/B/01-01234/2024</td>
+                        <td>BSc Information Technology</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Mercy Mumbua</td>
+                        <td>COM/B/01-05678/2023</td>
+                        <td>BSc Computer Science</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Brian Simiyu</td>
+                        <td>ENG/B/01-09101/2025</td>
+                        <td>BSc Civil Engineering</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- QUESTION THREE: MMUST Student Registration Form -->
+        <section id="registration" class="card">
+            <h2>MMUST Student Registration Form</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="e.g., Wanjala Joseph">
+                </div>
+
+                <div class="form-group">
+                    <label for="regnumber">Registration Number:</label>
+                    <input type="text" id="regnumber" name="regnumber" required placeholder="e.g., SIT/B/01-01234/2024">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="student@mmust.ac.ke">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="programme">Academic Programme:</label>
+                    <select id="programme" name="programme" required>
+                        <option value="" disabled selected>-- Select MMUST Programme --</option>
+                        <option value="cs">BSc in Computer Science</option>
+                        <option value="it">BSc in Information Technology</option>
+                        <option value="eng">BSc in Civil & Structural Engineering</option>
+                        <option value="bcom">Bachelor of Commerce</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Register</button>
+                    <button type="reset" class="btn-reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 Masinde Muliro University of Science & Technology. P.O. Box 190-50100 Kakamega, Kenya | Contact: info@mmust.ac.ke</p>
+    </footer>
+
+</body>
+</html>
